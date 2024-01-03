@@ -46,7 +46,9 @@ export default function Home() {
           </div>
         </div>
         <div className="mt-8 w-full">
-              <button className="w-full py-2 px-4 rounded-full bg-slate-400">Download Cv</button>
+          <button className="w-full py-2 px-4 rounded-full bg-slate-400">
+            Download Cv
+          </button>
         </div>
       </div>
       <div className="w-full shadow-[rgb(209,217,230)_5px_5px_15px,rgb(255,255,255)_-5px_-5px_15px] bg-white rounded-[20px]"></div>
