@@ -46,7 +46,7 @@ export default function Home() {
           </div>
         </div>
         <div className="mt-8 w-full">
-          <button className="w-full py-2 px-4 text-white rounded-full bg-[#365486]">
+          <button className="w-full py-2 px-4 text-white rounded-full bg-[#7FC7D9]">
             Download Cv
           </button>
         </div>
