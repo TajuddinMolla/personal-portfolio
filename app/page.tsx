@@ -19,27 +19,27 @@ export default function Home() {
           />
         </div> */}
         <div className="mt-6 text-center">
-          <h2 className="text-2xl font-semibold">Tajuddin Molla</h2>
-          <p className="text-sm mt-2">Software Engineer</p>
+          <h2 className="text-2xl font-semibold text-[#776B5D]">Tajuddin Molla</h2>
+          <p className="text-sm mt-2 text-[#776B5D]">Software Engineer</p>
         </div>
         <div className="flex justify-center items-center gap-4 mt-6">
           <div className="p-2 rounded-full bg-[#f4f5f6]">
-            <FaFacebookF className=" text-blue-500" />
+            <FaFacebookF className=" text-[#776B5D]" />
           </div>
           <div className="p-2 rounded-full bg-[#f4f5f6]">
-            <FaLinkedinIn className=" text-blue-700" />
+            <FaLinkedinIn className=" text-[#776B5D]" />
           </div>
           <div className="p-2 rounded-full bg-[#f4f5f6]">
-            <FaTwitter className=" text-blue-500" />
+            <FaTwitter className=" text-[#776B5D]" />
           </div>
           <div className="p-2 rounded-full bg-[#f4f5f6]">
-            <FaGithub className=" text-black" />
+            <FaGithub className=" text-[#776B5D]" />
           </div>
         </div>
-        <div className="mt-6 w-full bg-[#F3EEEA] rounded-[20px] p-7">
+        <div className="mt-6 w-full bg-[#f4f5f6] rounded-[20px] p-7">
           <div className="flex flex-col items-center justify-center divide-y w-full">
             {NAVBAR.map((item: any) => (
-              <Link key={item.id} href={item.slug} className="py-2 w-full">
+              <Link key={item.id} href={item.slug} className="py-2 w-full text-[#776B5D]">
                 {item.name}
               </Link>
             ))}
@@ -53,11 +53,11 @@ export default function Home() {
       </div>
       <div className="w-full shadow-lg bg-white rounded-[20px] p-10 max-h-[calc(100vh-64px)] overflow-y-auto">
         <div>
-          <h2 className="text-3xl font-semibold mb-4">About Me</h2>
-          <p className="text-slate-700">I'm web designer, and I'm very passionate and dedicated to my work. With 20 years experience as a professional web developer, I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step of the design process, from discussion and collaboration.</p>
+          <h2 className="text-3xl font-semibold mb-4 text-[#776B5D]">About Me</h2>
+          <p className="text-[#776B5D]">I'm web designer, and I'm very passionate and dedicated to my work. With 20 years experience as a professional web developer, I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step of the design process, from discussion and collaboration.</p>
         </div>
         <div className="mt-10">
-          <h2 className="text-3xl font-semibold mb-4">What I Do</h2>
+          <h2 className="text-3xl font-semibold mb-4 text-[#776B5D]">What I Do</h2>
           <div className="grid grid-cols-2 gap-8">
             {
               [1, 2, 3, 4].map((item: any) => (
@@ -68,7 +68,7 @@ export default function Home() {
                     </svg>
 
                   </div>
-                  <div>
+                  <div className="text-[#776B5D]">
 
                     <div>
                       <h3 className="text-xl font-medium">Ui/Ux Design</h3>
