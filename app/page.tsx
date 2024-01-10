@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <>
       <div>
-        <h2 className="text-3xl font-semibold mb-4 text-[#776B5D]">About Me</h2>
+        <h2 className="text-3xl font-semibold mb-8 text-[#776B5D]">About Me</h2>
         <p className="text-[#776B5D]">
           I'm web designer, and I'm very passionate and dedicated to my work.
           With 20 years experience as a professional web developer, I have
@@ -31,7 +31,7 @@ export default function Home() {
         </div>
       </div>
       <div className="mt-10">
-        <h2 className="text-3xl font-semibold mb-4 text-[#776B5D]">
+        <h2 className="text-3xl font-semibold mb-8 text-[#776B5D]">
           What I Do
         </h2>
         <div className="grid grid-cols-2 gap-8">
