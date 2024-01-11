@@ -16,11 +16,6 @@ export const NAVBAR = [
   },
   {
     id: 4,
-    name: "Blogs",
-    slug: "/blogs",
-  },
-  {
-    id: 5,
     name: "Contact",
     slug: "/contact",
   },
