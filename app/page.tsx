@@ -4,8 +4,8 @@ export default function Home() {
   return (
     <>
       <div>
-        <h2 className="text-3xl font-semibold mb-8 text-[#776B5D]">About Me</h2>
-        <p className="text-[#776B5D]">
+        <h2 className="text-xl sm:text-3xl font-semibold mb-4 sm:mb-8 text-[#776B5D]">About Me</h2>
+        <p className="text-[#776B5D] text-sm sm:text-base">
           {`I'm web designer, and I'm very passionate and dedicated to my work.
           With 20 years experience as a professional web developer, I have
           acquired the skills and knowledge necessary to make your project a
@@ -31,10 +31,10 @@ export default function Home() {
         </div>
       </div>
       <div className="mt-10">
-        <h2 className="text-3xl font-semibold mb-8 text-[#776B5D]">
+        <h2 className="text-xl sm:text-3xl font-semibold mb-4 sm:mb-8 text-[#776B5D]">
           What I Do
         </h2>
-        <div className="grid grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
           {[1, 2, 3, 4].map((item: any) => (
             <div
               className="bg-[#F3EEEA] rounded-[0.75rem] p-6 flex gap-4"
@@ -56,10 +56,10 @@ export default function Home() {
               </div>
               <div className="text-[#776B5D]">
                 <div>
-                  <h3 className="text-xl font-medium">Ui/Ux Design</h3>
+                  <h3 className="text-base sm:text-xl font-medium">Ui/Ux Design</h3>
                 </div>
                 <div>
-                  <p>
+                  <p className="text-xs sm:text-sm">
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
                     sed diam euismod volutpat.
                   </p>
