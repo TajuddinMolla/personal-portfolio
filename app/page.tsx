@@ -6,11 +6,11 @@ export default function Home() {
       <div>
         <h2 className="text-3xl font-semibold mb-8 text-[#776B5D]">About Me</h2>
         <p className="text-[#776B5D]">
-          I'm web designer, and I'm very passionate and dedicated to my work.
+          {`I'm web designer, and I'm very passionate and dedicated to my work.
           With 20 years experience as a professional web developer, I have
           acquired the skills and knowledge necessary to make your project a
           success. I enjoy every step of the design process, from discussion and
-          collaboration.
+          collaboration.`}
         </p>
       </div>
       <div className="py-6 border-y mt-10 text-[#776B5D]">
