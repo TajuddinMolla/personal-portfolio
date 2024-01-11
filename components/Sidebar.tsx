@@ -9,7 +9,7 @@ import { FaGithub } from "react-icons/fa";
 
 export default function Sidebar() {
     return (
-        <div className="min-w-[350px] max-h-[calc(100vh-64px)] overflow-y-auto py-8 px-6 shadow-lg bg-white  flex flex-col items-center rounded-[20px]">
+        <div className="min-w-[350px] max-h-[calc(100vh-64px)] overflow-y-auto py-8 px-6 shadow-lg bg-white hidden lg:flex flex-col items-center rounded-[20px]">
             <div className="w-[160px] h-[160px] max-w-[160px] max-h-[160px] 2xl:h-[200px] 2xl:max-w-[200px] 2xl:max-h-[200px] 2xl:w-[200px]">
                 <img
                     src="https://images.unsplash.com/photo-1704187508554-5f38dbbb3495?q=80&w=1968&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
