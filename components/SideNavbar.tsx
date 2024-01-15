@@ -7,7 +7,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 
-export default function SideNavbar() {
+export default function SideNavbar({ setIsMobileNavOpen }: any) {
     return (
         <>
             <div className="w-[160px] h-[160px] max-w-[160px] max-h-[160px] 2xl:h-[200px] 2xl:max-w-[200px] 2xl:max-h-[200px] 2xl:w-[200px]">
@@ -44,6 +44,7 @@ export default function SideNavbar() {
                             key={item.id}
                             href={item.slug}
                             className="py-2 w-full text-[#776B5D]"
+                            onClick={() => setIsMobileNavOpen(false)}
                         >
                             {item.name}
                         </Link>

@@ -23,18 +23,19 @@ export default function Sidebar() {
     return (
         <>
             <div className='lg:hidden px-4 bg-white rounded-[4px] flex justify-between items-center min-h-[50px] shadow-lg text-[#776B5D]'>
-                <Home />
+                <Link href={`/`}> <Home /></Link>
+
                 <Menu onClick={() => setIsMobileNavOpen(!isMobileNavOpen)} />
             </div>
             <Sheet open={isMobileNavOpen} onOpenChange={() => setIsMobileNavOpen(false)}>
                 <SheetContent className='w-full'>
                     <div className=" max-h-[calc(100vh-64px)] overflow-y-auto py-8  bg-white flex flex-col items-center rounded-[20px]">
-                        <SideNavbar />
+                        <SideNavbar setIsMobileNavOpen={setIsMobileNavOpen} />
                     </div>
                 </SheetContent>
             </Sheet>
             <div className="min-w-[350px] max-h-[calc(100vh-64px)] overflow-y-auto py-8 px-6 shadow-lg bg-white hidden lg:flex flex-col items-center rounded-[20px]">
-                <SideNavbar />
+                <SideNavbar setIsMobileNavOpen={setIsMobileNavOpen} />
             </div>
         </>
     )
