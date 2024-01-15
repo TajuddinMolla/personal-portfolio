@@ -1,8 +1,8 @@
 import React from "react";
 
-export default function PortfolioItem({ img, title, category }: any) {
+export default function PortfolioItem({ img, title, category, setIsModalOpen }: any) {
   return (
-    <div className="bg-[#F3EEEA] rounded-[0.75rem] overflow-hidden p-3 flex flex-col gap-2 mb-4">
+    <div className="bg-[#F3EEEA] cursor-pointer rounded-[0.75rem] overflow-hidden p-3 flex flex-col gap-2 mb-4" onClick={() => setIsModalOpen(true)}>
       <div className="mb-2">
         <img
           src={img}
