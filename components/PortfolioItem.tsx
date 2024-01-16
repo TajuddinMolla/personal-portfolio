@@ -7,7 +7,7 @@ export default function PortfolioItem({ img, title, category, setIsModalOpen }: 
         <img
           src={img}
           alt=""
-          className="object-cover object-center w-full h-full rounded-t-[0.75rem]"
+          className="object-cover object-center w-full min-h-[250px] h-[250px] max-h-[250px] rounded-t-[0.75rem]"
         />
       </div>
       <div>
