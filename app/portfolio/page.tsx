@@ -17,6 +17,7 @@ import { Categories, PortfolioItems } from "@/data/data";
 export default function Portfolio() {
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [activeCategory, setActiveCategory] = useState<any>('');
+  const [activeItem, setActiveItem] = useState<any>({})
   const [allPortfolioItems, setAllPortfolioItems] = useState<any>(PortfolioItems || [])
 
   useEffect(() => {
@@ -49,10 +50,9 @@ export default function Portfolio() {
           <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-8 mt-8">
             {allPortfolioItems.map((item: any, index: number) => (
               <PortfolioItem
-                img={item?.img}
-                title={item?.name}
-                category={item?.category?.name}
+                item={item}
                 setIsModalOpen={setIsModalOpen}
+                setActiveItem={setActiveItem}
                 key={index}
               />
             ))}
@@ -64,7 +64,7 @@ export default function Portfolio() {
       <Dialog open={isModalOpen} onOpenChange={() => setIsModalOpen(false)}>
         <DialogContent className="max-w-4xl 2xl:max-w-6xl max-h-[85vh] overflow-y-auto">
           <DialogHeader>
-            <DialogTitle className="text-[#776B5D] text-2xl text-center">Ui/Ux Developer</DialogTitle>
+            <DialogTitle className="text-[#776B5D] text-2xl text-center">{activeItem?.name}</DialogTitle>
           </DialogHeader>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mt-4">
             <div className="text-[#776B5D] flex gap-x-4 items-center">
@@ -72,37 +72,35 @@ export default function Portfolio() {
                 <File className="w-5 h-5" />
                 <p>Project:</p>
               </div>
-              <p>Website</p>
+              <p>{activeItem?.project}</p>
             </div>
             <div className="text-[#776B5D] flex gap-x-4 items-center">
               <div className="flex gap-x-1 items-center">
                 <User className="w-5 h-5" />
                 <p>Client:</p>
               </div>
-              <p>Demo</p>
+              <p>{activeItem?.client}</p>
             </div>
             <div className="text-[#776B5D] flex gap-x-4 items-center">
               <div className="flex gap-x-1 items-center">
                 <Code className="w-5 h-5" />
                 <p>Langages:</p>
               </div>
-              <p>NextJs, ReactJs, Tailwind CSS</p>
+              <p>{activeItem?.langages}</p>
             </div>
             <div className="text-[#776B5D] flex gap-x-4 items-center">
               <div className="flex gap-x-1 items-center">
                 <Eye className="w-5 h-5" />
                 <p>Preview:</p>
               </div>
-              <p>demo.com</p>
+              <p>{activeItem?.project_url}</p>
             </div>
           </div>
           <div className="text-[#776B5D] mb-4">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia placeat magnam possimus iusto blanditiis pariatur labore explicabo quo repellat hic dolorum numquam asperiores, voluptatum fugiat reiciendis aspernatur, non, odio aperiam voluptas ex tempora vitae. Dolor, consequatur quidem! Quas magni distinctio dolorum dolore natus, vel numquam accusamus. Nostrum eligendi recusandae qui tempore deserunt!
-
-            </p>
+            <p>{activeItem?.description}</p>
           </div>
           <div className="max-h-[400px]">
-            <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" className="max-h-[400px] rounded-[20px] h-full w-full object-cover object-center" />
+            <img src={activeItem?.img} alt="" className="max-h-[400px] rounded-[20px] h-full w-full object-cover object-center" />
           </div>
         </DialogContent>
       </Dialog>
