@@ -20,3 +20,23 @@ export const NAVBAR = [
     slug: "/contact",
   },
 ];
+
+
+export const Categories = [
+  {
+    id: '',
+    name: "All",
+  },
+  {
+    id: 1,
+    name: "Web Design",
+  },
+  {
+    id: 2,
+    name: "UI/UX",
+  },
+  {
+    id: 3,
+    name: "Logo",
+  },
+];

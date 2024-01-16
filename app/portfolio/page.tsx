@@ -11,19 +11,23 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog"
 import { Code, Eye, File, User } from "lucide-react";
+import { Categories } from "@/data/data";
 
 
 export default function Portfolio() {
   const [isModalOpen, setIsModalOpen] = useState(false)
+  const [activeCategory, setActiveCategory] = useState<any>('')
   return (
     <div className="text-[#776B5D]">
       <h2 className="text-3xl font-semibold mb-8 text-[#776B5D]">Portfolio</h2>
 
       <div className="flex gap-8 justify-end items-center">
-        <span>All</span>
-        <span>Web Design</span>
-        <span>Ui/UX</span>
-        <span>Logo Design</span>
+        {
+          Categories.map((category: any, index: any) => (
+            <span onClick={() => setActiveCategory(category.id)} className={`${activeCategory == category.id && "px-2 py-1.5 rounded-sm bg-[#F3EEEA]"} cursor-pointer`} key={index}>{category?.name}</span>
+          ))
+        }
+
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-8 mt-8">
