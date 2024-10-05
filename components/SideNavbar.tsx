@@ -30,18 +30,26 @@ export default function SideNavbar({ setIsMobileNavOpen }: any) {
         <p className="text-sm mt-2 text-[#776B5D]">Software Engineer</p>
       </div>
       <div className="flex justify-center items-center gap-4 mt-6">
-        <div className="p-2 rounded-full bg-[#f4f5f6]">
-          <FaFacebookF className=" text-[#776B5D]" />
-        </div>
-        <div className="p-2 rounded-full bg-[#f4f5f6]">
-          <FaLinkedinIn className=" text-[#776B5D]" />
-        </div>
-        <div className="p-2 rounded-full bg-[#f4f5f6]">
-          <FaTwitter className=" text-[#776B5D]" />
-        </div>
-        <div className="p-2 rounded-full bg-[#f4f5f6]">
-          <FaGithub className=" text-[#776B5D]" />
-        </div>
+        <Link href={`/`}>
+          <div className="p-2 rounded-full bg-[#f4f5f6]">
+            <FaFacebookF className=" text-[#776B5D]" />
+          </div>
+        </Link>
+        <Link href={`/`}>
+          <div className="p-2 rounded-full bg-[#f4f5f6]">
+            <FaLinkedinIn className=" text-[#776B5D]" />
+          </div>
+        </Link>
+        <Link href={`/`}>
+          <div className="p-2 rounded-full bg-[#f4f5f6]">
+            <FaTwitter className=" text-[#776B5D]" />
+          </div>
+        </Link>
+        <Link href={`/`}>
+          <div className="p-2 rounded-full bg-[#f4f5f6]">
+            <FaGithub className=" text-[#776B5D]" />
+          </div>
+        </Link>
       </div>
       <div className="mt-6 w-full bg-[#f4f5f6] rounded-[20px] p-7">
         <div className="flex flex-col items-center justify-center divide-y w-full">
