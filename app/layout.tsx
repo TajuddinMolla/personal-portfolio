@@ -1,11 +1,10 @@
-'use client'
+"use client";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
-import { AppProgressBar as ProgressBar } from 'next-nprogress-bar';
+import { AppProgressBar as ProgressBar } from "next-nprogress-bar";
 import Sidebar from "@/components/Sidebar";
 const inter = Inter({ subsets: ["latin"] });
-
 
 export default function RootLayout({
   children,
@@ -14,6 +13,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <title>Portfolio</title>
+      </head>
       <body className=" bg-gradient-to-r from-white to-[#F3EEEA] ">
         <main className="container flex flex-col lg:flex-row gap-8 min-h-screen max-h-screen py-8 2xl:py-24 px-4 md:px-8 mx-auto">
           <Sidebar />
